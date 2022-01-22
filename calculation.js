@@ -26,6 +26,8 @@ btn.addEventListener('click', (e) => {
         var teamx = Math.round(teams * 2 )
         if (solos < 0) return alert(`You're calculation isn't possible`)
         if (teams < 0) return alert(`You're calculation isn't possible`)
+        if (solos === 'Nan') return alert(`You're calculation isn't possible`)
+        if (teams === 'NaN') return alert(`You're calculation isn't possible`)
         resultsolo.innerText = `The're are ${solos} solos`
         resultduos.innerText = `The're are ${duos} duos`
     }, 100);

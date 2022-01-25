@@ -22,11 +22,13 @@ btn.addEventListener('click', (e) => {
         const duos = Math.round(startduo - playsolo)
         const verify = Math.round(duos * 2)
         const secondverification = Math.round(verify + solos)
-        if (!secondverification === totalplayers) return alert('The\'re was an error')
+        if (!secondverification === totalplayers) return alert('The\'re was an error without positive numbers ')
         var teamx = Math.round(teams * 2 )
-        if (teams > solos) return alert(`You're calculation isn't possible`)
-        if (solos < 0) return alert(`You're calculation isn't possible`)
-        if (teams < 0) return alert(`You're calculation isn't possible`)
+        //console.log(teams)
+        if (solos < 0) return alert(`You're calculation isn't possible without positive numbers`)
+        //console.log(solos)
+        if (duos < 0) return alert(`You're calculation isn't possible without positive numbers`)
+        //console.log(duos)
         resultsolo.innerText = `The're are ${solos} solos`
         resultduos.innerText = `The're are ${duos} duos`
     }, 100);

@@ -24,6 +24,7 @@ btn.addEventListener('click', (e) => {
         const secondverification = Math.round(verify + solos)
         if (!secondverification === totalplayers) return alert('The\'re was an error')
         var teamx = Math.round(teams * 2 )
+        if (teams > solos) return alert(`You're calculation isn't possible`)
         if (solos < 0) return alert(`You're calculation isn't possible`)
         if (teams < 0) return alert(`You're calculation isn't possible`)
         resultsolo.innerText = `The're are ${solos} solos`

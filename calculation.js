@@ -33,8 +33,8 @@ btn.addEventListener('click', (e) => {
         //console.log(solos)
         if (duos < 0) return alert(`You're calculation isn't possible without positive numbers`)
         //console.log(duos)
-        resultsolo.innerText = `The first unknown number is ${solos}`
-        resultduos.innerText = `The second unknown number is ${duos}`
+        resultsolo.innerText = `There are  ${solos} solos`
+        resultduos.innerText = `There are ${duos} duos`
     }, 100);
 })
 
